@@ -3,16 +3,16 @@ using namespace std;
 
 class Complex{
     private:
-        int a, b;
+        int a, b;       //a, b are instance member varaibles
     public:
-        void set_data(int x, int y){
+        void set_data(int x, int y){        //instance member function (If no instance, how will this called)
             a = x;
             b = y;
         }
-        void show_data(){
+        void show_data(){                   //instance member function (If no instance, how will this be called)
             cout<<"\n a = "<<a<<" b = "<<b;
         }
-        Complex add(Complex c){
+        Complex add(Complex c){             //instance member function (If no instance, how will this be called)
             Complex temp;
             temp.a = a + c.a;
             temp.b = b + c.b;
